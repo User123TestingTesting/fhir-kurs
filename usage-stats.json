@@ -5,6 +5,12 @@
   "jurisdiction": "SE",
   "extensions": [],
   "profiles": {
+    "Encounter": [
+      {
+        "url": "http://example.org/fhir/education/kursig/StructureDefinition/EducationEncounter",
+        "title": "Min Education Encounter"
+      }
+    ],
     "Patient": [
       {
         "url": "http://example.org/fhir/education/kursig/StructureDefinition/EducationPatient",
