@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-EducationEncounter.c
   "name" : "EducationEncounter",
   "title" : "Min Education Encounter",
   "status" : "draft",
-  "date" : "2026-11-02T10:51:05+00:00",
+  "date" : "2026-11-02T12:31:26+00:00",
   "publisher" : "FHIR-utbildning",
   "description" : "FHIR-utbildningen övning 3",
   "jurisdiction" : [{
