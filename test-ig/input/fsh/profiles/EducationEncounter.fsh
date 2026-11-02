@@ -5,4 +5,4 @@ Title: "Min Education Encounter"
 Description: "FHIR-utbildningen övning 3"
 * subject 1..1 MS
 * subject only Reference(EducationPatient)
-* Obeys edu-pat-1
+* obeys edu-enc-1
