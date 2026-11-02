@@ -1,13 +1,13 @@
 FhirEducationKursIG : Validation Results
 =========================================
 
-err = 0, warn = 10, info = 7, broken links = 0
-IG Publisher Version: 3.0.1 Out of date - current version is null
-Generated Mon Nov 02 12:45:33 UTC 2026. FHIR version 4.0.1 for fhir.education.kursig#0.1.0 (canonical = http://example.org/fhir/education/kursig)
+err = 1, warn = 10, info = 7, broken links = 0
+IG Publisher Version: 3.0.1
+Generated Mon Nov 02 12:52:35 UTC 2026. FHIR version 4.0.1 for fhir.education.kursig#0.1.0 (canonical = http://example.org/fhir/education/kursig)
  Build Errors : 0 / 8 / 0
  /home/runner/work/fhir-kurs/fhir-kurs/test-ig/fsh-generated/resources/ImplementationGuide-fhir.education.kursig : 0 / 0 / 3
  /home/runner/work/fhir-kurs/fhir-kurs/test-ig/fsh-generated/resources/Patient-patient-tolvan : 0 / 1 / 1
- /home/runner/work/fhir-kurs/fhir-kurs/test-ig/fsh-generated/resources/StructureDefinition-EducationEncounter : 0 / 1 / 4
+ /home/runner/work/fhir-kurs/fhir-kurs/test-ig/fsh-generated/resources/StructureDefinition-EducationEncounter : 1 / 1 / 4
  /home/runner/work/fhir-kurs/fhir-kurs/test-ig/fsh-generated/resources/StructureDefinition-EducationPatient : 0 / 0 / 3
 </table>
 
@@ -34,6 +34,7 @@ WARNING: Patient/patient-tolvan: Patient.identifier[0].system: Ingen definition 
 == fsh-generated/resources/StructureDefinition-EducationEncounter.json ==
 INFORMATION: StructureDefinition/EducationEncounter: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#SE for language(s) 'sv-SE'. The display is 'Sweden' which is a valid display for the default language
 INFORMATION: StructureDefinition/EducationEncounter: StructureDefinition.snapshot.element[4].binding.extension[0]: extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.4.0 är föråldrad med noteringen: 'Use additionalBinding extension or element instead'
+ERROR: StructureDefinition/EducationEncounter: StructureDefinition.snapshot.element[0].constraint[5]: Error in constraint 'edu-enc-1' on element Encounter with expression 'Status = 'finished' implies period.end.exists()': Fel vid utvärdering av FHIRPath-uttryck: Namnet 'Status' är inte giltigt för någon av de möjliga typerna: [http://hl7.org/fhir/StructureDefinition/Encounter] (@char 1)
 INFORMATION: Resource: The resource StructureDefinition/EducationEncounter could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 WARNING: StructureDefinition.where(url = 'http://example.org/fhir/education/kursig/StructureDefinition/EducationEncounter'): The Implementation Guide contains no examples for this profile
 
